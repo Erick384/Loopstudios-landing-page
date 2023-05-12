@@ -1,192 +1,205 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 600px 400px 100px 988px 150px;
-    /* grid-template-rows: repeat(5, auto); */
-    gap: 3rem;
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 600px 400px auto 150px;
+  /* grid-template-rows: repeat(5, auto); */
+  gap: 3rem;
 }
-.gOne{
-    background-image: url(./images/desktop/image-hero.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.gOne {
+  background-image: url(./images/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    margin: 5rem auto;
-    width: 70vw;
-    gap: 5rem;
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  width: 70vw;
+  gap: 5rem;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
-.navBar ul{
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
+.navBar ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
 }
-.navBar ul li a{
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
+.navBar ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
 }
-.text{
-    border: 1px solid hsl(0, 0%, 100%);
-    width: 28vw;
-    line-height: 0.9;
-    text-transform: uppercase;
-    margin-bottom: 4.5rem;
+.text {
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 28vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+  /* margin-bottom: 4.5rem; */
 }
-.text p{
-    padding: 1.4rem;
-    font-size: 50px;
-    color: hsl(0, 0%, 100%);
+.text p {
+  padding: 1.4rem;
+  font-size: 50px;
+  color: hsl(0, 0%, 100%);
 }
-.gTwo{
-    display: flex;
-    width: 70vw;
-    margin: 0 auto;
+.gTwo {
+  display: flex;
+  width: 70vw;
+  margin: 0 auto;
 }
-.gtimage{
-    position: relative;
+#interactive{
+    height: 100%;
+    width: 110%;
 }
-.pText{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    position: absolute;
-    width: 600px;
-    left: 752px;
-    top: 101vh;
-    padding: 3.5rem 0 0 3.5rem;
-    /* border: 1px solid red; */
-    background-color: hsl(0, 0%, 100%);
+.gtimage {
+  position: relative;
+}
+.pText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  width: 600px;
+  left: 752px;
+  top: 101vh;
+  padding: 3.5rem 0 0 3.5rem;
+  /* border: 1px solid red; */
+  background-color: hsl(0, 0%, 100%);
+}
 
+.gFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30px repeat(2, 480px);
+  gap: 1.65rem;
+  width: 70vw;
+  margin: 0 auto;
 }
-.gThree{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70vw;
-    margin: 0 auto;
+.gtf {
+  grid-column: 1 / span 2;
 }
-.gThree p{
-    font-size: 40px;
+.gtf p {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
-.gThree button{
-    height: fit-content;
-    padding: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    width: 120px;
-    border: 1px solid hsl(0, 0%, 0%);
-    cursor: pointer;
-    background-color: hsl(0, 0%, 100%);
+.gft {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 3 / span 2;
 }
-.gFour{
+.gft button {
+  height: fit-content;
+  padding: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 120px;
+  border: 1px solid hsl(0, 0%, 0%);
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+.gFour div img {
+  height: 100%;
+  width: 100%;
+}
+.gFive {
+  background-color: hsl(0, 0%, 0%);
+}
+.gFive-content {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 2rem auto;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px solid red; */
+}
+.sMedia {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+.rights span {
+  color: hsl(0, 0%, 55%);
+}
+.footNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 600px) {
+  body {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    grid-template-rows: repeat(2 ,480px);
-    gap: 1.65rem;
-    width: 70vw;
-    margin: 0 auto;
-}
-.gFour div img{
+    grid-template-rows: repeat(5, auto);
+    width: auto;
+  }
+  .content,
+  .gTwo,
+  .gThree,
+  .gFour,
+  .gFive-content {
+    width: 90vw;
+  }
+  .gTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  #interactive{
     height: 100%;
     width: 100%;
 }
-.gFive{
-    background-color: hsl(0, 0%, 0%);
-}
-.gFive-content{
-    display: flex;
-    justify-content: space-between;
-    width: 70vw;
-    margin: 2rem auto;
-}
-.contacts{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    /* border: 1px solid red; */
-}
-.sMedia{
-    display: flex;
-    gap: 1.2rem;
-    justify-content: flex-end;
-}
-.rights span{
-    color: hsl(0, 0%, 55%);
-}
-.footNav{
+  .text {
+    width: auto;
+  }
+  .text p {
+    padding: 1.4rem;
+    font-size: 40px;
+    width: auto;
+  }
+  .gtimage {
+    position: static;
+    width: auto;
+  }
+  .pText {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-@media screen and (max-width:600px) {
-    body{
-        display: grid;
-        grid-template-rows: repeat(5, auto);
-        width: auto;
-    }
-    .content , .gTwo , .gThree , .gFour , .gFive-content{
-        width: 90vw;
-    }
-    .gTwo{
-        display: flex;
-        flex-direction: column;
-    }
-    .text{
-        width: auto;
-    }
-    .text p{
-        padding: 1.4rem;
-        font-size: 40px;
-        width: auto;
-    }
-    .gtimage{
-        position: static;
-        width: auto;
-
-    }
-    .pText{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        position: static;
-        width: auto;
-        /* left: 752px;
+    gap: 1.5rem;
+    position: static;
+    width: auto;
+    /* left: 752px;
         top: 797px; */
-        padding: 0;
-        /* border: 1px solid red; */
-        background-color: hsl(0, 0%, 100%);
-    
-    }
-    .gFive-content{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .footNav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #menu ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .contacts{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    padding: 0;
+    /* border: 1px solid red; */
+    background-color: hsl(0, 0%, 100%);
+  }
+  .gFive-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
