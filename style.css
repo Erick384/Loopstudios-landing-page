@@ -164,9 +164,7 @@ body {
   color: hsl(0, 0%, 100%);
   /* border: 1px solid red; */
   text-align: center;
-  /* width: 200px; */
 }
-
 .gFive {
   background-color: hsl(0, 0%, 0%);
 }
@@ -200,6 +198,7 @@ body {
     display: grid;
     grid-template-rows: repeat(5, auto);
     width: auto;
+    height: 100%;
   }
   .content,
   .gTwo,
@@ -229,7 +228,6 @@ body {
     line-height: 0.9;
   }
   #VRtext2 {
-    font-size: 30px;
     text-align: center;
   }
   .text {
@@ -301,8 +299,9 @@ body {
     display: flex;
     height: 100%;
     align-items: end;
-    font-size: 30px;
-    padding: 10px;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 1rem;
     font-weight: normal;
     color: hsl(0, 0%, 100%);
     /* border: 1px solid red; */
