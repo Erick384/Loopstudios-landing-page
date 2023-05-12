@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 body {
   display: grid;
@@ -36,6 +37,7 @@ body {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
+  font-family: "Red Hat Display", sans-serif;
 }
 .text {
   border: 1px solid hsl(0, 0%, 100%);
@@ -78,6 +80,12 @@ body {
   text-transform: uppercase;
   line-height: 0.9;
 }
+#VRtext2 {
+  font-size: 17px;
+  color: hsl(0, 0%, 55%);
+  line-height: 1.2;
+  font-family: "Red Hat Display", sans-serif;
+}
 .gFour {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -104,7 +112,7 @@ body {
   padding: 6px;
   font-size: 12px;
   font-weight: 600;
-  width: 120px;
+  width: 150px;
   border: 1px solid hsl(0, 0%, 0%);
   cursor: pointer;
   background-color: hsl(0, 0%, 100%);
@@ -144,6 +152,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#imgp {
+  display: flex;
+  height: 100%;
+  align-items: end;
+  justify-content: center;
+  font-size: 30px;
+  padding: 2rem;
+  font-weight: normal;
+  color: hsl(0, 0%, 100%);
+  /* border: 1px solid red; */
+  text-align: center;
+  /* width: 200px; */
 }
 
 .gFive {
@@ -194,15 +215,22 @@ body {
   .gTwo {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
   }
   #interactive {
     height: 100%;
     width: 100%;
   }
   #VRtext {
-    font-size: 50px;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
     text-transform: uppercase;
     line-height: 0.9;
+  }
+  #VRtext2 {
+    font-size: 30px;
+    text-align: center;
   }
   .text {
     width: auto;
@@ -230,8 +258,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(10, auto);
-    border: 1px solid red;
-    /* gap: 1.65rem; */
+    /* border: 1px solid red; */
   }
   #img1 {
     background-image: url(./images/mobile/image-deep-earth.jpg);
@@ -268,11 +295,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 24vh;
   }
-  .gFour div {
+  #imgp {
+    display: flex;
+    height: 100%;
+    align-items: end;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: normal;
+    color: hsl(0, 0%, 100%);
+    /* border: 1px solid red; */
+    width: 200px;
+  }
+  /* .gFour div {
     border: 1px solid red;
-  }
+  } */
   .gtf {
     grid-row: 1;
     grid-column: 1;
