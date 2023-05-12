@@ -73,7 +73,11 @@ body {
   /* border: 1px solid red; */
   background-color: hsl(0, 0%, 100%);
 }
-
+#VRtext{
+    font-size: 50px; 
+    text-transform: uppercase;
+     line-height: 0.9;
+}
 .gFour {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -150,6 +154,10 @@ body {
   .gFive-content {
     width: 90vw;
   }
+  #navTop{
+    display: flex;
+    flex-direction: column;
+  }
   .gTwo {
     display: flex;
     flex-direction: column;
@@ -157,6 +165,11 @@ body {
   #interactive{
     height: 100%;
     width: 100%;
+}
+#VRtext{
+    font-size: 50px; 
+    text-transform: uppercase;
+     line-height: 0.9;
 }
   .text {
     width: auto;
@@ -181,6 +194,34 @@ body {
     padding: 0;
     /* border: 1px solid red; */
     background-color: hsl(0, 0%, 100%);
+  }
+  .gFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid red;
+
+    /* grid-template-rows: 30px repeat(8, 480px) 30px; */
+    /* grid-template-columns: 1; */
+    gap: 1.65rem;
+    /* width: 70vw;
+    margin: 0 auto; */
+  }
+  .gFour div{
+    border: 1px solid red;
+
+  }
+  .gtf {
+    /* grid-row: 1 ; */
+  }
+  .gtf p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .gft {
+    /* display: flex;
+    justify-content: flex-end; */
+    /* grid-row: 10; */
   }
   .gFive-content {
     display: flex;
